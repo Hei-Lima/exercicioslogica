@@ -1,6 +1,0 @@
---------------------
-Informações importantes:
-Você pode procurar partes que faltam nos documentos dando um ctrl + f
-e procurando por TODO (para fazer). 
-Adicione seu nome no documento de texto quando contribuir.
---------------------
