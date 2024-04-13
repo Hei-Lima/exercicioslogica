@@ -21,9 +21,16 @@ html {
   padding-left: 10px;
 }
 
+#title span a:hover {
+  background: rgba(0, 0, 0, 0.199);
+  font-size: 55px;
+  border-radius: 4px;
+}
+
 #title span {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -40,18 +47,50 @@ html {
   right: 0;
 }
 
-a {
+.list a {
     text-decoration: none;
     transition: 500ms;
     color: #FFF;
 }
 
-a:hover {
-    color: rgb(184, 184, 184);
+.list a:hover {
+    color: rgb(97, 101, 110);
     transition: 500ms;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 li {
     text-decoration: none;
+}
+
+.head a{
+  font-family: "lato", sans-serif;
+  transition: 500ms;
+  font-size: 15px;
+}
+
+.head ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.head li {
+  float: left;
+}
+
+.head li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.head a:hover {
+ color: rgb(97, 101, 110);
+ transition: 500ms;
+ font-size: 18px;
 }
