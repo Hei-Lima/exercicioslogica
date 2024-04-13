@@ -1,6 +1,14 @@
 --------------------
 Informações importantes:
-Você pode procurar partes que faltam nos documentos dando um ctrl + f
+Você pode procurar partes que faltam no documento Google dando um ctrl + f
 e procurando por TODO (para fazer). 
 Adicione seu nome no documento de texto quando contribuir.
+
+O uso da linguagem Python não é obrigatório, mas é extemamente encorajado, pois contribui com o processo didático
+do projeto (alunos do IFES aprendem Python antes de tudo).
+
+Ainda não sabemos como iremos resolver os exercícios que não forem solucionavéis com programas,
+mas eles serão resolvidos no futuro.
+
+O foco atual são de programas que resolvem o conteúdo da primeira prova (principalmete conjuntos e sistemas númericos),
 --------------------
