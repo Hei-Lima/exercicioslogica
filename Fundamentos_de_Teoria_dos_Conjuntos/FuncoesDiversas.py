@@ -34,3 +34,10 @@ def absoluteComplement(x):
 def cartesianProduct(x, y):
     z= list(itertools.product(x,y))
     return z
+
+#Par ou impar
+def isEven(x):
+    if x % 2:
+        return "even"
+    else:
+        return "odd"
