@@ -1,96 +1,90 @@
-html {
-  height: 100%;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
-  display: flex;
-  height: 100%;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body {
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box;
+    background-color: #10161f;
+    background-image: url(media/back.png); 
+}
+
 
 #title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  color: #FFF;
-  text-align: center;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-  margin-top: -60px;
-  padding-left: 10px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.7px);
+    -webkit-backdrop-filter: blur(0.7px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: #FDF0D5;
+    font-size: 3rem;
 }
 
-#title span a:hover {
-  background: rgba(0, 0, 0, 0.199);
-  font-size: 55px;
-  border-radius: 4px;
+#title {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.7px);
+    -webkit-backdrop-filter: blur(0.7px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: #FDF0D5;
+    font-size: 3rem;
+    transition: 500ms;
 }
 
-#title span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.list {
-  color: #FFF;
-  display: inline-block;
-  align-self: flex-end;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+#title:hover {
+   transition: 500ms;
+   font-size: 3.1rem;
 }
 
 .list a {
     text-decoration: none;
+    color: #FDF0D5;
+}
+
+.list {
+    color: #FDF0D5;
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.list li {
     transition: 500ms;
-    color: #FFF;
 }
 
-.list a:hover {
-    color: rgb(97, 101, 110);
+
+.list li:hover {
     transition: 500ms;
-    font-size: 24px;
-}
-
-li {
-    text-decoration: none;
-}
-
-.head a{
-  font-family: "lato", sans-serif;
-  transition: 500ms;
-  font-size: 15px;
-}
-
-.head ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.head li {
-  float: left;
-}
-
-.head li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-
-.head a:hover {
- color: rgb(97, 101, 110);
- transition: 500ms;
- font-size: 18px;
+    font-size: 23px;
 }
