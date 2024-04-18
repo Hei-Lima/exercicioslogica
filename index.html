@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="src/icon2.png">
+    <title>Projeto de Lógica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script defer src="app.js"></script>
+
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+
+<body>
+    
+    <!-- NAV BAR -->
+    <nav id="desktop-nav">
+        <div class="logo">Projeto de Lógica</div>
+        <dir>
+            <ul class="nav-links">
+                <li><a href="#livro">Livro das Resoluções</a></li>
+                <li><a href="#livrotexto">Livro-Texto</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+            </ul>
+        </dir>
+    </nav>
+
+
+    <!-- MOBILE NAV BAR -->
+    <nav id="mobile-nav">
+        <div class="logo">Projeto</div>
+        <div class="menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#livro" onclick="toggleMenu()">Livro Resoluções</a></li>
+                <li><a href="#livrotexto-mobile" onclick="toggleMenu()">Livro-Texto</a></li>
+                <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#equipe" onclick="toggleMenu()">Equipe</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO PAGE -->
+    <section id="hero">
+        <div class="section__pic-container">
+            <img src="./src/icon2.png" alt="Logo do Projeto">
+        </div>
+        <div class="section__text">
+            <p class="section__text-p1">Bem vindos ao</p>
+            <h1 class="title">Projeto de Resolução</h1>
+            <p class="section__text-p2">do livro de lógica</p>
+            
+            <div class="btn-conteiner">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Resoluções</button>
+                <button class="btn btn-color-2" onclick="window.open('https:/codeberg.org/profjeffandrade/ilm-book/src/branch/main/ilm-book.pdf')">Livro-Texto</button>
+            </div>
+
+            <div id="socials-container">
+                <span onclick="window.open('https:/github.com/Hei-Lima/exercicioslogica')" class="github-redirect">
+                    <p style="cursor: pointer; color: black;">Repositório</p>
+                    <img src="./src/github.png" alt="Github Logo" class="icon">
+                </span> 
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- LIVRO -->
+    <section id="livro">
+        <p class="section__text-p1 hidden">O Projeto</p>
+        <h1 class="title hidden">Livro das Resoluções</h1>
+
+        <div class="section-container hidden">
+            <div class="section__pic-container">
+                <img src="./src/capa-livro-projeto.jpg" alt="about" class="about-pic" onclick="window.open('https:/docs.google.com/document/d/1r7mQCIGDCi5zBh5zvCXT4sMSgauUfq5CGGZscnMyryA')">
+            </div>
+
+            <div class="livro-details-container">
+                <div class="text-container">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis iusto dolores aliquid possimus voluptas ut tenetur! Excepturi ipsam neque quis obcaecati laudantium, vel perspiciatis magnam vitae quaerat saepe in a. Quidem perferendis voluptates dolor atque nulla debitis veritatis praesentium vero! Odio soluta suscipit, ea quos cumque mollitia vitae non alias natus rem consectetur cupiditate nam nulla quae consequatur. Ducimus eius placeat suscipit iste quod est, beatae cumque soluta quisquam porro, repellat eum excepturi illo tempora officiis tempore consequatur delectus omnis in ex minus hic eligendi? Deserunt dolor perspiciatis alias voluptas sit, corporis recusandae dolores unde blanditiis earum praesentium. Recusandae, laudantium. 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LIVRO TEXTO-->
+    <section id="livrotexto">
+        <p class="section__text-p1 hidden">O Livro-Texto</p>
+        <h1 class="title hidden">Introdução à Lógica</h1>
+
+        <div class="section-container hidden">
+            
+            <div class="livro-details-container">
+                <div class="text-container">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error labore porro vel doloremque quae autem facilis nobis qui, voluptatibus facere magni nam cum nesciunt odio deleniti aspernatur, totam iusto quibusdam soluta asperiores. Facere deleniti non quam reiciendis? Perspiciatis aspernatur eligendi quia debitis corporis sequi ratione officia numquam. Quibusdam, quam atque.
+                    <br> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nisi iste, vero delectus itaque dicta soluta officia, deleniti doloribus obcaecati ipsum velit esse iure vitae? Accusantium eius porro suscipit facere necessitatibus, ratione quia distinctio odio iusto velit. Fuga consequuntur temporibus dolorem expedita voluptatum? Repellat, explicabo porro? Id assumenda quis eveniet?
+                    </p>
+                </div>
+            </div>
+
+            <div class="section__pic-container">
+                <img src="./src/ilm-cover.png" alt="about" class="about-pic" onclick="window.open('https:/codeberg.org/profjeffandrade/ilm-book/src/branch/main/ilm-book.pdf')">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- LIVRO TEXTO MOBILE -->
+    <section id="livrotexto-mobile">
+        <p class="section__text-p1 hidden">O Livro-Texto</p>
+        <h1 class="title hidden">Introdução à Lógica</h1>
+
+        <div class="section-container hidden">
+            
+            <div class="section__pic-container">
+                <img src="./src/ilm-cover.png" alt="about" class="about-pic" onclick="window.open('https:/codeberg.org/profjeffandrade/ilm-book/src/branch/main/ilm-book.pdf')">
+            </div>
+                        
+            <div class="livro-details-container">
+                <div class="text-container">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error labore porro vel doloremque quae autem facilis nobis qui, voluptatibus facere magni nam cum nesciunt odio deleniti aspernatur, totam iusto quibusdam soluta asperiores. Facere deleniti non quam reiciendis? Perspiciatis aspernatur eligendi quia debitis corporis sequi ratione officia numquam. Quibusdam, quam atque.
+                    <br> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nisi iste, vero delectus itaque dicta soluta officia, deleniti doloribus obcaecati ipsum velit esse iure vitae? Accusantium eius porro suscipit facere necessitatibus, ratione quia distinctio odio iusto velit. Fuga consequuntur temporibus dolorem expedita voluptatum? Repellat, explicabo porro? Id assumenda quis eveniet?
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <p class="section__text-p1 hidden">Sobre</p>
+        <h1 class="title hidden">O Projeto</h1>
+        
+        <div class="section-container hidden">
+            
+            <div class="section__pic-container">
+                <img src="./src/capa-livro-projeto.jpeg" alt="about" style="border-radius: 1rem;">
+            </div>
+            
+            <div class="about-details-container">
+
+                <div class="text-container">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error labore porro vel doloremque quae autem facilis nobis qui, voluptatibus facere magni nam cum nesciunt odio deleniti aspernatur, totam iusto quibusdam soluta asperiores. Facere deleniti non quam reiciendis? Perspiciatis aspernatur eligendi quia debitis corporis sequi ratione officia numquam. Quibusdam, quam atque.
+                    <br> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nisi iste, vero delectus itaque dicta soluta officia, deleniti doloribus obcaecati ipsum velit esse iure vitae? Accusantium eius porro suscipit facere necessitatibus, ratione quia distinctio odio iusto velit. Fuga consequuntur temporibus dolorem expedita voluptatum? Repellat, explicabo porro? Id assumenda quis eveniet?
+                    </p>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    
+    <!-- EQUIPE -->
+    <section id="equipe">
+        <p class="section__text-p1 hidden">Colaboradores</p>
+        <h1 class="title hidden">Nossa Equipe</h1>
+
+        <div class="team-content hidden">
+            
+            <div class="box">
+                <img src="./src/pfp-teste.jpg" alt="pfpteste">
+                <h3>Haagen Dazs</h3>
+                <h5>Sorvetao</h5>
+                <div class="social-media">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-box-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./src/pfp-teste.jpg" alt="pfpteste">
+                <h3>Haagen Dazs</h3>
+                <h5>Sorvetao</h5>
+                <div class="social-media">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-box-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./src/pfp-teste.jpg" alt="pfpteste">
+                <h3>Haagen Dazs</h3>
+                <h5>Sorvetao</h5>
+                <div class="social-media">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-box-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./src/pfp-teste.jpg" alt="pfpteste">
+                <h3>Haagen Dazs</h3>
+                <h5>Sorvetao</h5>
+                <div class="social-media">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-box-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <nav class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#livro">Livro das Resoluções</a></li>
+                <li><a href="#livrotexto">Livro-Texto</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+            </ul>            
+        </nav>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

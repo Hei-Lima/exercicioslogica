@@ -1,0 +1,422 @@
+/* FORMATAÇÃO GERAL*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85,85,85); 
+    cursor: default;
+}
+
+/* TRANSIÇÃO */
+
+.btn {
+    transition: all 300ms ease;
+}
+
+/* NAV BAR */
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: .8rem;
+    text-decoration-color: rgb(181, 181 , 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* MOBILE MENU */
+
+#mobile-nav {
+    display: none;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+  }
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+    line-height: 120%;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.menu-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.menu-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.menu-icon span:first-child {
+    transform: none;
+}
+
+.menu-icon span:first-child {
+    opacity: 1;
+}
+
+.menu-icon span:first-child {
+    transform: none;
+}
+
+/* SECTIONS */ 
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    /* scroll-snap-align: start; */
+}
+
+.section-container {
+    display: flex;
+}
+
+/* HERO PAGE */
+
+#hero {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text-p1 {
+    text-align: center;
+}
+
+.section__text-p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    cursor: default;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.github-redirect {
+    cursor: pointer; 
+    display: flex; gap: 1rem; 
+    align-items: center;
+    transform: scale(0.95);
+    transition: all 100ms ease;
+}
+
+.github-redirect:hover {
+    transform: scale(1);
+    transition: all 100ms ease;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1, .btn-color-2 {
+    border: rgb(53, 53 ,53) .1rem solid;
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1, .btn-color-2:hover {
+    background: rgb(53, 53 ,53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) .1rem solid;
+}
+
+/* LIVRO */
+#livro {
+    position: relative;
+    margin-top: 10vh;
+}
+
+/* LIVRO TEXTO */
+#livrotexto {
+    position: relative;
+}
+
+.livro-details-container {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+#livrotexto-mobile {
+    display: none;
+}
+
+/* ABOUT SECTION */
+
+#sobre {
+    position: relative;
+}
+
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.about-pic {
+    border-radius: 1rem;
+    transform: scale(0.95);
+    transition: all .3s ease;
+}
+
+.about-pic:hover {
+    cursor: pointer;
+    transition: all .3s ease;
+    transform: scale(1);
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* EQUIPE */
+
+.equipe {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#281c3e,#0f051d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team-content{
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+	margin-top: 4rem;
+}
+
+.team-content img{
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+
+.box{
+	padding: 16px;
+	background: #1b1229;
+	border-radius: 15px;
+	transition: all .38s ease;
+}
+.box h3{
+	font-size: 23px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.box h5{
+	font-size: 15px;
+	font-weight: 600;
+	color: #b7b4bb;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+
+.social-media i{
+	display: inline-block;
+	color: #fff;
+	font-size: 30px;
+	margin: 0 8px;
+	transition: all .38s ease;
+    transform: scale(.8);
+
+}
+.social-media i:hover{
+	transform: scale(1);
+}
+
+.box:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+
+/* SCROLL LEGAL */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all .8s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}
