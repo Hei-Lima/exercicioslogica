@@ -39,10 +39,10 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
    <td align="center">
-      <a href="#" title="defina o titulo do link">
+      <a href="https://github.com/ogianpaneto" title="">
         <img src="https://avatars.githubusercontent.com/u/66529207?v=4" width="100px;" alt="Foto Gian Paneto no GitHub"/><br>
         <sub>
-          <b>Gian Paneto/b>
+          <b>Gian Paneto</b>
         </sub>
       </a>
     </td>
