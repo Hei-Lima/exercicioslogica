@@ -31,7 +31,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <table>
   <tr>
    <td align="center">
-      <a href="#" title="defina o titulo do link">
+      <a href="https://github.com/Hei-Lima" title="" style="text-decoration: none; color: white;">
         <img src="https://avatars.githubusercontent.com/u/162245613?v=4" width="100px;" alt="Foto Heitor Lima no GitHub"/><br>
         <sub>
           <b>Heitor Lima</b>
@@ -39,7 +39,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
    <td align="center">
-      <a href="https://github.com/ogianpaneto" title="">
+      <a href="https://github.com/ogianpaneto" title="" style="text-decoration: none; color: white;">
         <img src="https://avatars.githubusercontent.com/u/66529207?v=4" width="100px;" alt="Foto Gian Paneto no GitHub"/><br>
         <sub>
           <b>Gian Paneto</b>
@@ -47,7 +47,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="#" title="defina o titulo do link">
+      <a href="https://github.com/enzohubner" title="" style="text-decoration: none; color: white;">
         <img src="https://avatars.githubusercontent.com/u/94123023?s=400&u=823c0ea99dbd99d62ea0d6e0fe768a8e6af35ed0&v=4" width="100px;" alt="Foto do Enzo Hubner no GitHub"/><br>
         <sub>
           <b>Enzo Hubner</b>
