@@ -1,8 +1,8 @@
 import math
 
-num = *range(0, 30000),
+num = 1111
 
-#Exercício A.2:
+#Exercício A.3:
 
 
 base_string = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -16,43 +16,25 @@ def conversor(number, base):
 
 
 def check(n):
-    cont = 0
-    for i in n:
-        if len(str(i)) <= 3:
-            cont = cont + 1
-    return cont
-        
+    return len(str(n))
+       
 
-binario= []
-for i in num:
-    binario.append(bin(1111)[2:])
+binario = bin(num)[2:]
 
-quinario= []
-for i in num:
-    quinario.append(conversor(int(i), 5))
+quinario = conversor(num, 5)
 
-octal= []
-for i in num:
-    octal.append(conversor(int(i), 8))
+octal= (conversor(num, 8))
 
-undecimal= []
-for i in num:
-    undecimal.append(conversor(int(i), 11))
+undecimal= (conversor(num, 11))
 
-duodecimal= []
-for i in num:
-    duodecimal.append(conversor(int(i), 12))
-    
-hexadecimal= []
-for i in num:
-    hexadecimal.append(conversor(int(i), 16))
 
-vigesimal= []
-for i in num:
-    vigesimal.append(conversor(int(i), 20))
+duodecimal= (conversor(num, 12))
 
     
+hexadecimal= (conversor(num, 16))
 
+
+vigesimal= (conversor(num, 20))    
 
 print("Exercício A.3:")
 print(f"Binario: {check(binario)}")
@@ -64,4 +46,3 @@ print(f"Hexadecimal: {check(hexadecimal)}")
 print(f"Vigesimal: {check(vigesimal)}")
 
 
-#Essa é, de longe, a pior solução para o problema. Escala mal demais, pois tem O(n), enquanto a otimizada x**n (n sendo a base) teria O(1). Mas não estou nem ai.
