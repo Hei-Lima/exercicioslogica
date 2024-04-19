@@ -1,6 +1,10 @@
-def main():
+#Solution for exercise a7
 
-    print(f"""1. {int('1101', 2)}
+def main():
+    """This method of solving will be applied to all exercises. 
+    It utilizes Python's native methods for converting between bases."""
+
+    print(f"""1. {int('1101', 2)} 
 2. {int('1010', 2)}
 3. {int('10101', 2)}
 4. {int('11010', 2)}
