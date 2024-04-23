@@ -3,7 +3,7 @@ However, situations such as code ambiguity cannot be checked with simple code,
 therefore, this code does not cover these situations.I will leave a note when 
 the quoted sentence is ambiguous.'''
 
-def verificaProposicao(frase):
+def verifica_proposicao(frase):
 
     palavras_anulatorias = ["eu", "ele", "ela", "lá", "agora", "sempre", "nunca", "nenhum"]
 
