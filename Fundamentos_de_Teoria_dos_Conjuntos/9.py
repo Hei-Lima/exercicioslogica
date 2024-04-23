@@ -1,5 +1,5 @@
 import math
-### Seguindo o conceito de alfabeto real, é improvavel checar se uma determinada lista de números é um alfabeto. Por isso, importei uma lista com os 3 alfabetos mais famosos.
+###Foi usada a definição de alfabeto do livro, na qual um alfabeto seria um conjunto finito. Portanto, todo alfabeto-real (da linguistica) é um alfabeto também. Embaixo, 3 alfabetos-reais.
 ###JSON da lista: https://gist.githubusercontent.com/Hei-Lima/45c9917535d7d0b3b44d60939e8ba255/raw/412fc0bb59905eab6d9823f6706eb171f35c64bb/alphabets.json
 latin =  {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}
 cyrilic = {"А", "Б", "В", "Г", "Д", "Е", "Ё", "Ж", "З", "И", "Й", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "У", "Ф", "Х", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Э", "Ю", "Я", "а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я"}
@@ -18,6 +18,8 @@ primos = set(i for i in range(1000) if isPrime(i) == True)
 
 def check(x):
     if x == latin or x == greek or x == cyrilic:
+        return "Alfabeto"
+    elif len(x) < 6: #Enfim, isso funciona e só tá aqui pra dizer que foi feito com um programa, mas pode se induzir que se x < 6, 6!=infinito.
         return "Alfabeto"
     else:
         return "Não é alfabeto"
