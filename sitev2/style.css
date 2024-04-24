@@ -331,6 +331,10 @@ section {
     margin: auto 0;
 }
 
+.about-text {
+    font-size: 90%;
+}
+
 /* EQUIPE */
 
 .equipe {
