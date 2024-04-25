@@ -41,3 +41,18 @@ def isEven(x):
         return "even"
     else:
         return "odd"
+    
+
+#Dominio
+def domain(s):
+    D = set()
+    for (x, y) in s:
+        D.add((x))
+    return D
+
+#Imagem
+def image(s):
+    Im = set()
+    for (x, y) in s:
+        Im.add((y))
+    return Im
