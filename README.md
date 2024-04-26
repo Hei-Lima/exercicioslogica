@@ -4,7 +4,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/enzohubner/MovieMapper?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/enzohubner/MovieMapper?style=for-the-badge)
 
-Este é o repositório de resoluções dos exercícios do livro de [Introdução à Lógica Matemática para Alunos de Computação](https://codeberg.org/profjeffandrade/ilm-book). O repositório foi criado por alunos do IFES - Campus Serra. Este é um trabalho em andamento e colaborativo,
+Este é o repositório de resoluções dos exercícios do livro de [Introdução à Lógica Matemática para Alunos de Computação](https://codeberg.org/profjeffandrade/ilm-book). O repositório foi criado por alunos do IFES - Campus Serra. Este é um trabalho em andamento e colaborativo.
 
 
 ### INSTRUÇÕES PARA ACESSO AO PDF:
