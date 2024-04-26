@@ -1,7 +1,7 @@
 import itertools
 
 
-#Exercício 3:
+#Exercício 11:
 A = {2, 3, 4, 5}
 B = {3, 4, 5, 6, 10}
 
@@ -50,7 +50,7 @@ def isLessEqual():
 
 
 
-print(f'Exercício 3')
+print(f'Exercício 11')
 print(f'1. Pares: {isDivisible()}, Domínio: {domain(isDivisible())}, Imagem: {image(isDivisible())}')
 print(f'2. Pares: {isTwelve()}, Domínio: {domain(isTwelve())}, Imagem: {image(isTwelve())}')
 print(f'3. Pares: {isPlusOne()}, Domínio: {domain(isPlusOne())}, Imagem: {image(isPlusOne())}')
