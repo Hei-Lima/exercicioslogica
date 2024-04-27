@@ -12,7 +12,7 @@ def main():
         i += 1
 
     #The function "<5" aligns the text to the left within a five-character space.
-
+    #lerolero
     return 0
 if __name__ == '__main__':
     main()
