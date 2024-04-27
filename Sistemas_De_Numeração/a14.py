@@ -15,5 +15,5 @@ def main():
     #The function "<5" aligns the text to the left within a five-character space.
     print(f"{bin:<16} {oct:<6} {hex:<5}")
 
-if __name__ == "__main__":
+if __name__ == "__main__":  
   main()
