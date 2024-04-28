@@ -43,7 +43,7 @@ print(f'Exercício 12')
 print(f'1. {lessThanNine()}')
 print(f'2. {yPlusThree()}...(Xn, Yn+3), (Xn, Yn+6)...')
 print(f'3. {equalsTwelve()}')
-print(f'4. {isACube()}...(Xn, Y), (Xn, Y(n+1)³)')
+print(f'4. {isACube()}...(Xn, Yn³), (Xn, Y(n+1)³)')
 
 
 
