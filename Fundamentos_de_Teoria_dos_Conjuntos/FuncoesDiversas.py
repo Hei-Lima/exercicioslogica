@@ -56,3 +56,56 @@ def image(s):
     for (x, y) in s:
         Im.add((y))
     return Im
+
+
+###endorrelações:
+
+#Reflexiva
+def reflexive(l):
+    d = set()
+    i = set()
+    for (x, y) in l:
+        i.add(y)
+        if x == y:
+            d.add(x)
+    if d == i:
+        return "Reflexiva"
+    else:
+        return "Não Reflexiva"
+
+
+#Simetrica            
+def symmetric(l):
+    for x in l:
+        conj = (x[1], x[0])
+        if conj in l:
+            continue
+        else:
+            return "Não é simétrica"
+    return "Simétrica"
+
+#antissimetrica  
+def antisymmetric(l):
+    for x in l:
+        conj = (x[1], x[0])
+        if conj not in l:
+            continue
+        else:
+            return "Não é Antissimétrica"
+    return "Antissimétrica"
+
+
+#transitiva
+###Esse codigo aqui foi pego deste site, nele existem implementações melhores que as minhas para os problemas: https://w3.cs.jmu.edu/mayfiecs/cs228/python/relations.py
+def transitive(l):
+    conj = set()
+    for x, y in l:
+        conj.add(x)
+
+    for x in conj:
+        for y in conj:
+            if (x, y) in conj:
+                for z in conj:
+                    if (y, z) in conj and (x, z) not in conj:
+                        return "Não Transitiva"
+    return "Transitiva"

@@ -33,7 +33,7 @@ def equalsTwelve():
 def isACube():
     U = list()
     for (x, y) in z:
-        if y == x**3:
+        if (y**(1/3)).is_integer():
             U.append((x, y))
         if len(U) > 200:
             return U[:5]
@@ -43,7 +43,7 @@ print(f'Exercício 12')
 print(f'1. {lessThanNine()}')
 print(f'2. {yPlusThree()}...(Xn, Yn+3), (Xn, Yn+6)...')
 print(f'3. {equalsTwelve()}')
-print(f'4. {isACube()}...(Xn, Yn³), (Xn+1, Y(n+1)³)')
+print(f'4. {isACube()}...(Xn, Yn³), (Xn, Y(n+1)³)')
 
 
 
