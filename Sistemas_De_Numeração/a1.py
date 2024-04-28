@@ -1,11 +1,9 @@
-import math
-
 #Exercício A.1:
 num = *range(0, 25),
 dec = num
 
-base_string = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 def conversor(number, base):
+    base_string = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     result = ""
     while number:
         result += base_string[number % base]
