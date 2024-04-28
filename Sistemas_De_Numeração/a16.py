@@ -7,8 +7,8 @@ def main():
     i = int(1)
     for num in lista:
         #This code formats the num by stripping unwanted char
-        hex = format(num, 'x').upper()
-        print(f"{i}. {hex:<5}")
+        hexa = format(num, 'x').upper()
+        print(f"{i}. {hexa:<5}")
         i += 1
 
     return 0
