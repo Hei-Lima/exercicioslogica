@@ -1,8 +1,9 @@
-#Solution for exercise a17
+#Solution for exercise a18
 
 def main():
     
-    list = [110101010, 100100010, 10100000, 101001, 10100101000, 111101001111, 1100100110, 10110100100, 111001111110]
+    list = [1110100001010, 1010110010001001, 11100111111,  10100101111, 10101111, 1111100110100, 1111010111, 1011111010,  110010110]
+    #Note: for some values the first row of 0's must be disregarded when calculated
     decList = []
     octList = []
     
@@ -19,9 +20,9 @@ def main():
     i = 0
     for i in range(len(list)):
         decList.append(binToDec(list[i]))
-        octList.append(oct(decList[i]))
+        octList.append(hex(decList[i]))
         print(f'{i+1}. {octList[i]}')
         i += 1
 
 if __name__ == "__main__":
-    main() 
+    main()
