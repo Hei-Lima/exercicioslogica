@@ -20,7 +20,7 @@ def main():
     for i in range(len(list)):
         decList.append(binToDec(list[i]))
         octList.append(oct(decList[i]))
-        print(f'{i+1}. {octList[i]}')
+        print(f'{i+1}. {octList[i][2:]}')
         i += 1
 
 if __name__ == "__main__":

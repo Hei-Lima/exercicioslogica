@@ -5,10 +5,9 @@ def main():
     list = [1110100001010, 1010110010001001, 11100111111,  10100101111, 10101111, 1111100110100, 1111010111, 1011111010,  110010110]
     #Note: for some values the first row of 0's must be disregarded when calculated
     decList = []
-    octList = []
+    hexList = []
     
     def binToDec(binary):
- 
         decimal, i = 0, 0
         while(binary != 0):
             dec = binary % 10
@@ -20,8 +19,8 @@ def main():
     i = 0
     for i in range(len(list)):
         decList.append(binToDec(list[i]))
-        octList.append(hex(decList[i]))
-        print(f'{i+1}. {octList[i]}')
+        hexList.append(hex(decList[i]))
+        print(f'{i+1}. {hexList[i][2:]}')
         i += 1
 
 if __name__ == "__main__":
