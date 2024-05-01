@@ -1,8 +1,8 @@
 ﻿# Exercícios Lógica
 
-![GitHub repo size](https://img.shields.io/github/repo-size/enzohubner/MovieMapper?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/enzohubner/MovieMapper?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/enzohubner/MovieMapper?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Hei-Lima/exercicioslogica?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/Hei-Lima/exercicioslogica?style=for-the-badge)
+![GitHub Last commit](https://img.shields.io/github/last-commit/Hei-Lima/exercicioslogica?style=for-the-badge)
 
 Este é o repositório de resoluções dos exercícios do livro de [Introdução à Lógica Matemática para Alunos de Computação](https://codeberg.org/profjeffandrade/ilm-book). O repositório foi criado por alunos do IFES - Campus Serra. Este é um trabalho em andamento e colaborativo.
 
@@ -51,6 +51,14 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         <img src="https://avatars.githubusercontent.com/u/94123023?s=400&u=823c0ea99dbd99d62ea0d6e0fe768a8e6af35ed0&v=4" width="100px;" alt="Foto do Enzo Hubner no GitHub"/><br>
         <sub>
           <b>Enzo Hubner</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Evigno" title="" style="text-decoration: none; color: #FFFFFF;">
+        <img src="https://avatars.githubusercontent.com/u/123860836?v=4" width="100px;" alt="Foto do Lucas S Gums no GitHub"/><br>
+        <sub>
+          <b>Lucas S Gums</b>
         </sub>
       </a>
     </td>
