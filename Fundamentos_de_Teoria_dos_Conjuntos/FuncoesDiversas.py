@@ -109,3 +109,27 @@ def transitive(l):
                     if (y, z) in conj and (x, z) not in conj:
                         return "Não Transitiva"
     return "Transitiva"
+
+#Injetora
+def isInjetora(s):
+    i = list()
+    iset = set()
+    for (x, y) in s:
+        i.append(y)
+        iset.add(y)
+    if len(iset) != len(i):
+        return "Não é Injetora"
+    else:
+        return "Injetora"
+            
+#Sobrejetora
+def isSobrejetora(r, s):
+    img = set()
+    for x, y in r:
+        img.add(y)
+        
+    if img != s:
+        return "Não é Sobrejetora"
+    else:
+        return "Sobrejetora"
+            

@@ -1,0 +1,41 @@
+\documentclass{article}
+\pagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc,trees,positioning,arrows,fit,shapes,calc}
+\begin{document}
+
+\begin{tikzpicture}[
+mydot/.style={
+  circle,
+  fill,
+  inner sep=2pt
+},
+>=latex,
+shorten >= pt,
+shorten <= 3pt
+]
+
+
+\node[mydot,label={left:4}] (a4) {}; 
+\node[mydot,below=of a4,label={left:5}] (a5) {}; 
+\node[mydot,below=of a5,label={left:6}] (a6) {}; 
+\node[mydot,below=of a6,label={left:7}] (a7) {}; 
+\node[mydot,below=of a7,label={left:8}] (a8) {}; 
+\node[mydot,below=of a8,label={left:CONJUNTO A}] (s2) {}; 
+
+\node[mydot,right=2cm of a4,label={right:8}] (b8) {}; 
+\node[mydot,below=of b8,label={right:9}] (b9) {}; 
+\node[mydot,below=of b9,label={right:10}] (b10) {}; 
+\node[mydot,below=of b10,label={right:11}] (b11) {}; 
+\node[mydot,below=of b11,label={right:CONJUNTO B}] (s1) {}; 
+
+\node[draw,fit= (a4) (a5) (a6) (a7) (a8),minimum width=2cm] {} ;
+\node[draw,fit= (b8) (b9) (b10) (b11),minimum width=2cm] {} ;
+\path[->] (a4) edge (b8);
+\path[->] (a5) edge (b8);
+\path[->] (a6) edge (b9);
+\path[->] (a7) edge (b9); 
+\path[->] (a8) edge (b10); 
+\end{tikzpicture}
+
+\end{document}
