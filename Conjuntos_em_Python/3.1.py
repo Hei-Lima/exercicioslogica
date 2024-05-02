@@ -5,12 +5,9 @@ print("Exercício 1:")
 A = {1}
 B = {1, 2} 
 C = {frozenset({1}), 1} 
-print("A = {1}")
-print("B = {1, 2}")
-print("C = {frozenset({1}), 1} \n")
+
 
 print("Exercício 2:")
-
 
 print(f"a-{A <= B}")
 print(f"b-{A < B}")
