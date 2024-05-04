@@ -19,7 +19,7 @@
     
     <!-- NAV BAR -->
     <nav id="desktop-nav">
-        <div class="logo">Projeto de Lógica</div>
+        <!-- <div class="logo">Projeto de Lógica</div> -->
         <dir>
             <ul class="nav-links">
                 <li><a href="#livro">Livro das Resoluções</a></li>
@@ -33,7 +33,7 @@
 
     <!-- MOBILE NAV BAR -->
     <nav id="mobile-nav">
-        <div class="logo">Projeto</div>
+        <div class="logo">Projeto de Lógica</div>
         <div class="menu">
             <div class="menu-icon" onclick="toggleMenu()">
             <span></span>
@@ -61,8 +61,8 @@
             <p class="section__text-p2">do ilm-book</p>
             
             <div class="btn-conteiner">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">As resoluções</button>
-                <button class="btn btn-color-2" onclick="window.open('https:/codeberg.org/profjeffandrade/ilm-book/src/branch/main/ilm-book.pdf')">O livro-texto</button>
+                <button class="btn" onclick="window.open('./assets/resume-example.pdf')">As resoluções</button>
+                <button class="btn" onclick="window.open('https:/codeberg.org/profjeffandrade/ilm-book/src/branch/main/ilm-book.pdf')">O livro-texto</button>
             </div>
 
             <div id="socials-container">
@@ -78,29 +78,27 @@
 
     <!-- LIVRO -->
     <section id="livro">
-        <p class="section__text-p1 hidden">O Projeto</p>
-        <h1 class="title hidden">Livro das Resoluções</h1>
+        <p class="section__text-p1 hidden">Livro das Resoluções</p>
+        <h1 class="title hidden">O Projeto</h1>
 
         <div class="section-container hidden">
+
             <div class="section__pic-container">
                 <img src="./src/capa-livro-projeto.jpg" alt="about" class="about-pic" onclick="window.open('https:/docs.google.com/document/d/1r7mQCIGDCi5zBh5zvCXT4sMSgauUfq5CGGZscnMyryA')">
             </div>
 
             <div class="livro-details-container">
                 <div class="text-container">
-                    <!-- TODO: MELHORAR OS TEXTOS -->
                     <p>
-                        O Projeto de Resolução do ilm-book foi criado por alguns alunos do primeiro período de 2024 de BSI(bacharelado de Sistemas de Informação) da Instituição Federal do Espírito Santo(IFES) Campus Serra e tem como objetivo resolver todos os exercícios do <a id="textlink" href="#livrotexto">Livro De Introdução à Lógica Matemática para Alunos de Computação</a> &mdash; livro escrito pelo professor de Lógica Jefferson O. Andrade. <br> <br>
+                        O Projeto de Resolução do ilm-book foi desenvolvido por alunos do primeiro período de 2024 do curso de Bacharelado em Sistemas de Informação do Instituto Federal do Espírito Santo (IFES) Campus Serra. Seu propósito é abordar todos os exercícios do livro <a id="textlink" href="#livrotexto">Introdução à Lógica Matemática para Alunos de Computação</a> &mdash; escrito pelo professor Jefferson O. Andrade. <br> <br>
 
-                        O projeto utiliza de algoritimos escritos, geralmente em Python, pelos próprios integrantes para a resolução dos exercícios. Em casos de que problemas não podem ser resolvidos com programa, resolve-se somente com o que foi ensinado em sala de aula. <br><br>
-
-                        "Apesar de sim, algumas respostas parecerem forçadas e te levar ao questionamento de 'vale mesmo a pena fazer um programa assim?', eu vou morrer na montanha que acha válida a tentativa." - Heitor Lima<br><br>   
+                        O projeto utiliza de algoritimos escritos pelos próprios integrantes (geralmente em Python) para a resolução dos exercícios. Quando um problema não pode ser resolvido por meio de programação, busca-se a solução utilizando apenas os conceitos aprendidos em sala de aula.<br><br>
 
                         O projeto se ergue sobre <strong>três pilares</strong>: <br>
   
-                        1 &bull; Todo o exercício que pode ser resolvido por programa, deve ser resolvido por programa. Isso visa a melhora das habilidades de resolução de problemas e conhecimento de programação dos contribuidores. <br>
-                        2 &bull; Toda atividade será revisada por pares ou trios, até mesmo as resolvidas computacionalmente. <br>
-                        3 &bull; Em caso de atividade não resolvida por programa, recomenda-se documentação ou prova de como se tenha chegado à resposta.
+                        1 &bull; <strong>Resolução por Algoritmo</strong>: Qualquer exercício que possa ser resolvido por meio de programação deve ser abordado dessa forma. Isso visa aprimorar as habilidades de resolução de problemas e o conhecimento de programação dos colaboradores. <br>
+                        2 &bull; <strong>Revisão Colaborativa</strong>: Toda atividade será revisada por pares ou trios, mesmo aquelas resolvidas computacionalmente. <br>
+                        3 &bull; <strong>Documentação e Prova</strong>: Em caso de atividade não resolvida por programa, recomenda-se documentação ou prova de como se tenha chegado à resposta.
                     </p>
                 </div>
             </div>
@@ -167,13 +165,13 @@
     <!-- SOBRE -->
     <section id="sobre">
         <p class="section__text-p1 hidden">Sobre</p>
-        <h1 class="title hidden">O Projeto</h1>
+        <h1 class="title hidden">Detalhes</h1>
         
         <div class="section-container hidden">
             
-            <div class="section__pic-container">
+            <!-- <div class="section__pic-container">
                 <img src="./src/capa-livro-projeto.jpeg" alt="about" style="border-radius: 1rem;">
-            </div>
+            </div> -->
             
             <div class="about-details-container">
 
@@ -212,7 +210,7 @@
                 <div class="box-content">    
                     <img src="https://avatars.githubusercontent.com/u/162245613?v=4" alt="Heitor Lima">
                     <h3>Heitor Lima</h3>
-                    <h5>Sorvetao</h5>
+                    <h5>Idealizador</h5>
                     <div class="social-media">
                         <a href="https://github.com/hei-lima"><i class="ri-github-fill"></i></a>
                         <a href="https://www.linkedin.com/in/hei-lima/"><i class="ri-linkedin-fill"></i></a>
@@ -225,7 +223,7 @@
                 <div class="box-content">
                     <img src="https://avatars.githubusercontent.com/u/66529207?v=4" alt="Gian Paneto">
                     <h3>Gian Paneto</h3>
-                    <h5>Sorvetao</h5>
+                    <h5>Colaborador</h5>
                     <div class="social-media">
                         <a href="https://github.com/ogianpaneto"><i class="ri-github-fill"></i></a>
                         <a href="https://www.linkedin.com/in/gianpaneto/"><i class="ri-linkedin-fill"></i></a>
@@ -238,7 +236,7 @@
                 <div class="box-content">                   
                     <img src="https://avatars.githubusercontent.com/u/94123023?v=4" alt="Enzo Hubner">
                     <h3>Enzo Hubner</h3>
-                    <h5>Sorvetao</h5>
+                    <h5>Colaborador</h5>
                     <div class="social-media">
                         <a href="https://github.com/enzohubner"><i class="ri-github-fill"></i></a>
                         <a href="https://www.linkedin.com/in/enzohubner/"><i class="ri-linkedin-fill"></i></a>
@@ -246,27 +244,26 @@
                 </div>
             </div>
 
-            <!-- TODO: ADICIONAR LINKEDIN DO LUCAS -->
             <div class="box">
                 <div class="box-content">
-                    <img src="https://avatars.githubusercontent.com/u/123860836?v=4" alt="Lucas Gums">
-                    <h3>Lucas Gums</h3>
-                    <h5>Sorvetao</h5>
+                    <img src=".\src\lucas.jpeg" alt="Lucas Gums">
+                    <h3>Lucas Gums </h3>
+                    <h5>Colaborador</h5>
                     <div class="social-media">
                         <a href="https://github.com/evigno"><i class="ri-github-fill"></i></a>
-                        <a href="https://www.linkedin.com/in/gianpaneto/"><i class="ri-linkedin-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/lucas-silverio-gums-201b51307/"><i class="ri-linkedin-fill"></i></a>
                         <a href="https://www.instagram.com/lucas.s.gums/"><i class="ri-instagram-fill"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="box all-contributors-box">
+            <!-- TODO: LISTA DE COLABORADORES QUANDO EXISTIREM -->
+            <!-- <div class="box all-contributors-box">
                 <div class="box-content all-contributors">
                     <h3 style="font-size: 20px;">Outros Colaboradores</h3>
                     <iframe src="contributors.txt" id="contributors"></iframe>
                 </div>
-            </div>
-
+            </div> -->
 
         </div>
 
@@ -274,11 +271,24 @@
 
 
     <!-- FOOTER -->
-    <footer>
+    <footer id="desktop-footer">
         <nav class="nav-links-container">
             <ul class="nav-links">
                 <li><a href="#livro">Livro das Resoluções</a></li>
                 <li><a href="#livrotexto">Livro-Texto</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+            </ul>            
+        </nav>
+        <p class="copyright">&copy; Gian Paneto 2024</p>
+    </footer>
+
+    <!-- MOBILE FOOTER -->
+    <footer id="mobile-footer">
+        <nav class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#livro">Livro das Resoluções</a></li>
+                <li><a href="#livrotexto-mobile">Livro-Texto</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#equipe">Equipe</a></li>
             </ul>            

@@ -36,6 +36,7 @@
 
     #mobile-nav {
         display: flex;
+        justify-content: space-around;
     }
 
     #livrotexto-mobile {
@@ -44,6 +45,14 @@
 
     #livrotexto {
         display: none;
+    }
+
+    #desktop-footer {
+        display: none;
+    }
+
+    #mobile-footer {
+        display: block;
     }
 
     .team {
@@ -94,14 +103,6 @@
     }
 }
 
-@media screen and (max-width: 570px) {
-    .all-contributors-box {
-        grid-column: 2;
-        grid-column-start: span 2;
-
-    }
-}
-
 @media screen and (max-width: 600px) {
     footer{
         height: 40vh;
@@ -120,6 +121,7 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
+
 
     .about-container, .btn-container {
         flex-wrap: wrap;
@@ -165,6 +167,14 @@
 
 }
 
+@media screen and (max-width: 570px) {
+    .all-contributors-box {
+        grid-column: 2;
+        grid-column-start: span 2;
+
+    }
+}
+
 @media screen and (max-width: 370px) {
     .box i {
         font-size: 20px;
@@ -185,13 +195,13 @@
 /* FOOTER */
 
 footer {
-    height: 20vh;
-    
+    height: 20vh;  
 }
 
 
+
 /* TEXT SELECTION */
-::-moz-selection { /* Firefox */
+::-moz-selection { 
     color: white;
     background: black;
   }
