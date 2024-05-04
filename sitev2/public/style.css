@@ -19,6 +19,7 @@ html {
 p {
     color: rgb(85,85,85); 
     cursor: default;
+    text-align: justify;
 }
 
 /* TRANSIÇÃO */
@@ -52,7 +53,7 @@ a {
 
 }
 
-a:hover {
+a:not(#textlink):hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: .8rem;
@@ -195,6 +196,7 @@ section {
 .section__text-p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .title {
@@ -337,14 +339,14 @@ section {
 
 /* EQUIPE */
 
-.equipe {
+#equipe {
     position: relative;
-    width: 100%;
-    height: 100vh;
-    background: radial-gradient(#281c3e,#0f051d);
+    width: auto;
+    height: 110vh;
+    /* background: radial-gradient(#281c3e,#0f051d); */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
     flex-direction: column;
 }
 
@@ -438,4 +440,17 @@ section {
     .hidden{
         transition: none;
     }
+}
+
+#textlink {
+    color: #d81e5b;
+
+}
+
+#textlink:hover {
+    text-decoration:underline;
+}
+
+.copyright {
+    text-align: center;
 }
