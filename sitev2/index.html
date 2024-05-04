@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="src/icon2.png">
+    <title>Projeto de Lógica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script defer src="app.js"></script>
+
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+
+<body>
+    
+    <!-- NAV BAR -->
+    <nav id="desktop-nav">
+        <!-- <div class="logo">Projeto de Lógica</div> -->
+        <dir>
+            <ul class="nav-links">
+                <li><a href="#livro">Livro das Resoluções</a></li>
+                <li><a href="#livrotexto">Livro-Texto</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+            </ul>
+        </dir>
+    </nav>
+
+
+    <!-- MOBILE NAV BAR -->
+    <nav id="mobile-nav">
+        <div class="logo">Projeto de Lógica</div>
+        <div class="menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#livro" onclick="toggleMenu()">Livro Resoluções</a></li>
+                <li><a href="#livrotexto-mobile" onclick="toggleMenu()">Livro-Texto</a></li>
+                <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#equipe" onclick="toggleMenu()">Equipe</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO PAGE -->
+    <section id="hero">
+        <div class="section__pic-container">
+            <img src="./src/icon2.png" alt="Logo do Projeto">
+        </div>
+        <div class="section__text">
+            <p class="section__text-p1">Conheçam o</p>
+            <h1 class="title">Projeto de Resolução</h1>
+            <p class="section__text-p2">do ilm-book</p>
+            
+            <div class="btn-conteiner">
+                <button class="btn" onclick="window.open('./assets/resume-example.pdf')">As resoluções</button>
+                <button class="btn" onclick="window.open('https:/codeberg.org/profjeffandrade/ilm-book/src/branch/main/ilm-book.pdf')">O livro-texto</button>
+            </div>
+
+            <div id="socials-container">
+                <span onclick="window.open('https:/github.com/Hei-Lima/exercicioslogica')" class="github-redirect">
+                    <p style="cursor: pointer; color: black;">Repositório do Projeto</p>
+                    <img src="./src/github.png" alt="Github Logo" class="icon">
+                </span> 
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- LIVRO -->
+    <section id="livro">
+        <p class="section__text-p1 hidden">Livro das Resoluções</p>
+        <h1 class="title hidden">O Projeto</h1>
+
+        <div class="section-container hidden">
+
+            <div class="section__pic-container">
+                <img src="./src/capa-livro-projeto.jpg" alt="about" class="about-pic" onclick="window.open('https:/docs.google.com/document/d/1r7mQCIGDCi5zBh5zvCXT4sMSgauUfq5CGGZscnMyryA')">
+            </div>
+
+            <div class="livro-details-container">
+                <div class="text-container">
+                    <p>
+                        O Projeto de Resolução do ilm-book foi desenvolvido por alunos do primeiro período de 2024 do curso de Bacharelado em Sistemas de Informação do Instituto Federal do Espírito Santo (IFES) Campus Serra. Seu propósito é abordar todos os exercícios do livro <a id="textlink" href="#livrotexto">Introdução à Lógica Matemática para Alunos de Computação</a> &mdash; escrito pelo professor Jefferson O. Andrade. <br> <br>
+
+                        O projeto utiliza de algoritimos escritos pelos próprios integrantes (geralmente em Python) para a resolução dos exercícios. Quando um problema não pode ser resolvido por meio de programação, busca-se a solução utilizando apenas os conceitos aprendidos em sala de aula.<br><br>
+
+                        O projeto se ergue sobre <strong>três pilares</strong>: <br>
+  
+                        1 &bull; <strong>Resolução por Algoritmo</strong>: Qualquer exercício que possa ser resolvido por meio de programação deve ser abordado dessa forma. Isso visa aprimorar as habilidades de resolução de problemas e o conhecimento de programação dos colaboradores. <br>
+                        2 &bull; <strong>Revisão Colaborativa</strong>: Toda atividade será revisada por pares ou trios, mesmo aquelas resolvidas computacionalmente. <br>
+                        3 &bull; <strong>Documentação e Prova</strong>: Em caso de atividade não resolvida por programa, recomenda-se documentação ou prova de como se tenha chegado à resposta.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LIVRO TEXTO-->
+    <section id="livrotexto">
+        <p class="section__text-p1 hidden">O Livro-Texto</p>
+        <h1 class="title hidden">ilm-book</h1>
+
+        <div class="section-container hidden">
+            
+            <div class="livro-details-container">
+                <div class="text-container">
+                    <p>
+                        "Este livro é uma primeira introdução à lógica formal voltada principalmente à resolução de problemas. Ao longo dos anos ministrando a disciplina de Lógica em cursos da área de informática, [...] tenho percebido que a forma tradicional de abordar a lógica que é usada em cursos mais técnicos [...] tem pouca receptividade nos alunos dos cursos da área de informática, i.e., dos cursos que trabalham a computação mais como meio do que como fim. [...] para alunos dos cursos em que a computação é meio, [...] a lógica deve ser tratada como ferramenta para a resolução de problemas. Assim, meu propósito ao iniciar a escrita deste livro foi preencher um vazio que, na minha opinião, existe na bibliografia de livros didáticos sobre lógica."
+                        <br> <br>
+                        "Este livro é voltado principalmente para os estudantes dos períodos iniciais dos cursos de informática. O material não assume nenhuma experiência prévia com lógica formal, nem com programação." 
+                        <br><br>
+                    </p>
+                    <p style="text-align: right;">Jefferson O. Andrade <br> Vitória, 31 de outubro de 2016.</p>
+                </div>
+            </div>
+
+            <div class="section__pic-container">
+                <img src="./src/ilm-cover.png" alt="about" class="about-pic" onclick="window.open('https:/codeberg.org/profjeffandrade/ilm-book/src/branch/main/ilm-book.pdf')">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- LIVRO TEXTO MOBILE -->
+    <section id="livrotexto-mobile">
+        <p class="section__text-p1 hidden">O Livro-Texto</p>
+        <h1 class="title hidden">ilm-book</h1> 
+
+        <div class="section-container hidden">
+            
+            <div class="section__pic-container">
+                <img src="./src/ilm-cover.png" alt="about" class="about-pic" onclick="window.open('https:/codeberg.org/profjeffandrade/ilm-book/src/branch/main/ilm-book.pdf')">
+            </div>
+                        
+            <div class="livro-details-container">
+                <div class="text-container">
+                    <p>
+                        "Este livro é uma primeira introdução à lógica formal voltada principalmente à resolução de problemas. Ao longo dos anos ministrando a disciplina de Lógica em cursos da área de informática, [...] tenho percebido que a forma tradicional de abordar a lógica que é usada em cursos mais técnicos [...] tem pouca receptividade nos alunos dos cursos da área de informática, i.e., dos cursos que trabalham a computação mais como meio do que como fim. [...] para alunos dos cursos em que a computação é meio, [...] a lógica deve ser tratada como ferramenta para a resolução de problemas. Assim, meu propósito ao iniciar a escrita deste livro foi preencher um vazio que, na minha opinião, existe na bibliografia de livros didáticos sobre lógica."
+                        <br> <br>
+                        "Este livro é voltado principalmente para os estudantes dos períodos iniciais dos cursos de informática. O material não assume nenhuma experiência prévia com lógica formal, nem com programação." 
+                        <br><br>
+                    </p>
+                    <p style="text-align: right;">Jefferson O. Andrade <br> Vitória, 31 de outubro de 2016.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <p class="section__text-p1 hidden">Sobre</p>
+        <h1 class="title hidden">Detalhes</h1>
+        
+        <div class="section-container hidden">
+            
+            <!-- <div class="section__pic-container">
+                <img src="./src/capa-livro-projeto.jpeg" alt="about" style="border-radius: 1rem;">
+            </div> -->
+            
+            <div class="about-details-container">
+
+                <div class="text-container about-text">
+                    
+                    <h1>Por que escrevemos código para resolver? - Heitor Lima</h1>
+                    <br>
+                    <p>A ideia do projeto não é só resolver os exercícios, mas sim, também, resolver problemas. Existem coisas que não são nativamente implementadas em Python e precisamos quebrar a cabeça para conseguir resolver corretamente. A parte de Python tenta garantir que nossas respostas estajam certas, e aprimorar nossa habilidade de resolução de problemas. Apesar de sim, algumas respostas parecerem forçadas e te levar ao questionamento de "vale mesmo a pena fazer um programa assim?", eu vou morrer na montanha que acha válida a tentativa.
+                    </p>
+                    <br>
+                    <h1>Como resolvemos a questão 10?</h1>
+                    <br>
+                    <p><b>Seja L = {a, b, c, ..., x, y, z}</b>
+                    <br><br>
+                    Na página 185: "Seja X um alfabeto, então X* denota o conjunto de todas as palavras possíveis sobre X". Portanto, L* representa todas as palavras possíveis de seu respectivo alfabeto. 
+                    <br><br>
+                    <b>a) Português é uma linguagem sobre L, ou seja, é um subconjunto de L*.</b> 
+                    <br><br>
+                    A frase é verdadeira, pois todas as palavras possíveis do Português são elementos de L* (isto, claro, desconsiderando os diacríticos. Neste caso, a frase seria falsa).
+                    </p>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    
+    <!-- EQUIPE -->
+    <section id="equipe">
+        <p class="section__text-p1 hidden">Colaboradores</p>
+        <h1 class="title hidden">Nossa Equipe</h1>
+
+        <div class="team-content hidden">
+            
+            <div class="box">
+                <div class="box-content">    
+                    <img src="https://avatars.githubusercontent.com/u/162245613?v=4" alt="Heitor Lima">
+                    <h3>Heitor Lima</h3>
+                    <h5>Idealizador</h5>
+                    <div class="social-media">
+                        <a href="https://github.com/hei-lima"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/hei-lima/"><i class="ri-linkedin-fill"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <img src="https://avatars.githubusercontent.com/u/66529207?v=4" alt="Gian Paneto">
+                    <h3>Gian Paneto</h3>
+                    <h5>Colaborador</h5>
+                    <div class="social-media">
+                        <a href="https://github.com/ogianpaneto"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/gianpaneto/"><i class="ri-linkedin-fill"></i></a>
+                        <a href="https://www.instagram.com/gianpaneto/"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">                   
+                    <img src="https://avatars.githubusercontent.com/u/94123023?v=4" alt="Enzo Hubner">
+                    <h3>Enzo Hubner</h3>
+                    <h5>Colaborador</h5>
+                    <div class="social-media">
+                        <a href="https://github.com/enzohubner"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/enzohubner/"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <img src=".\src\lucas.jpeg" alt="Lucas Gums">
+                    <h3>Lucas Gums </h3>
+                    <h5>Colaborador</h5>
+                    <div class="social-media">
+                        <a href="https://github.com/evigno"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/lucas-silverio-gums-201b51307/"><i class="ri-linkedin-fill"></i></a>
+                        <a href="https://www.instagram.com/lucas.s.gums/"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TODO: LISTA DE COLABORADORES QUANDO EXISTIREM -->
+            <!-- <div class="box all-contributors-box">
+                <div class="box-content all-contributors">
+                    <h3 style="font-size: 20px;">Outros Colaboradores</h3>
+                    <iframe src="contributors.txt" id="contributors"></iframe>
+                </div>
+            </div> -->
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="desktop-footer">
+        <nav class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#livro">Livro das Resoluções</a></li>
+                <li><a href="#livrotexto">Livro-Texto</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+            </ul>            
+        </nav>
+        <p class="copyright">&copy; Gian Paneto 2024</p>
+    </footer>
+
+    <!-- MOBILE FOOTER -->
+    <footer id="mobile-footer">
+        <nav class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#livro">Livro das Resoluções</a></li>
+                <li><a href="#livrotexto-mobile">Livro-Texto</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+            </ul>            
+        </nav>
+        <p class="copyright">&copy; Gian Paneto 2024</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
