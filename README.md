@@ -1,8 +1,9 @@
 ﻿# Exercícios Lógica
-
 ![GitHub repo size](https://img.shields.io/github/repo-size/Hei-Lima/exercicioslogica?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/Hei-Lima/exercicioslogica?style=for-the-badge)
 ![GitHub Last commit](https://img.shields.io/github/last-commit/Hei-Lima/exercicioslogica?style=for-the-badge)
+![Github Pages])(https://img.shields.io/website-up-down-green-red/http/monip.org.svg website:(https://hei-lima.github.io/exercicioslogica/))
+
 
 Este é o repositório de resoluções dos exercícios do livro de [Introdução à Lógica Matemática para Alunos de Computação](https://codeberg.org/profjeffandrade/ilm-book). O repositório foi criado por alunos do IFES - Campus Serra. Este é um trabalho em andamento e colaborativo.
 
