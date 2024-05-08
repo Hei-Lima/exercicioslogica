@@ -1,4 +1,4 @@
-#Resolution for the exercise 5.2 (pag. 115)
+#Resolution for the exercise 5.2 (p. 115 on pdf; p. 97 on book page)
 
 def main():
 
