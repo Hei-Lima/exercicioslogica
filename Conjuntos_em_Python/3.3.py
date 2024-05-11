@@ -1,4 +1,4 @@
-#O Livro assume que usaremos um ambiente de REPL como o CMD
+#O Livro assume que usaremos um ambiente de REPL como o CMD,
 #mas os códigos são os mesmos. Assumo. também, que preciso imprimir o set.
 #Exercício 3.3:
 print("Exercício 1:")

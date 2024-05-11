@@ -3,7 +3,7 @@ from sympy import *
 import time
 start_time = time.time()
 #Geralmente, as relações não mudam indo para infinito, então só precisamos de uma amotra suficientemente grande para provar.
-#Esse, provavlmente, vai ser o código mais lento de todo o projeto, mas me orgulho muito dele. O time ali é para mostrar a demora da execução. = Hei=Lima
+#Esse, provavlmente, vai ser o código mais lento de todo o projeto, mas me orgulho muito dele. O time ali é para mostrar a demora da execução. - Hei-Lima
 
 #Exercício 13:
 A = {x for x in range(0, 400)}
