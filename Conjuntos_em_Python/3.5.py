@@ -23,7 +23,7 @@ for (x, y) in NSquared:
 
 p2 = list((x, y) for x, y in NSquared if x == y + 3)
 
-p3 = list((x, y) for x, y in NSquared if (2 * x) + (3 * x) == 12)
+p3 = list((x, y) for x, y in NSquared if (2 * x) + (3 * y) == 12)
 
 #is_integer() checa se um número é um inteiro ou não. Qualquer forma que valide se o número não é quebrado pode ser aceita.
 p4 = list((x, y) for x, y in NSquared if y**(1/3).is_integer())
@@ -32,5 +32,5 @@ p4 = list((x, y) for x, y in NSquared if y**(1/3).is_integer())
 print(f"1-\n ρ1:{p1}")
 print(f"2-\n ρ2:{p2}")
 print(f"3-\n ρ3:{p3}")
-print(f"4-\n ρ3:{p4}")
+print(f"4-\n ρ4:{p4}")
 
