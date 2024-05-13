@@ -17,4 +17,4 @@ def powerset(conjunto):
 print(f'Exercício 3')
 print(f'1- {powerset(a)}\n')
 print(f'2- {powerset(b)}\n')
-print(f'3- {powerset(b)}\n')
+print(f'3- {powerset(c)}\n')
