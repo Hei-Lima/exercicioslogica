@@ -1,3 +1,4 @@
+#TODO: REFACTOR
 #Exercício 4:
 import operator
 
@@ -8,8 +9,8 @@ def issubset(x, y):
     else:
         return False
     
-def isnotsubset(x, y):
-    if x <= y:
+def isnotpropersubset(x, y):
+    if x < y:
         return False
     else:
         return True
@@ -47,7 +48,32 @@ def acharx(operador1, conjuntofixo1, operador2, conjuntofixo2):
     
     print('')
 
+def acharxreverso(operador1, conjuntofixo1, operador2, conjuntofixo2):
+    listaconjuntos = [a, b, c, d, e, f]
+    global x 
+    print(f'{x}- ', end='')
+    for conjunto in listaconjuntos:
+        if operador1(conjuntofixo1, conjunto) and operador2(conjuntofixo2, conjunto):
+            if conjunto == a:
+                print('A', end=' ')
+            elif conjunto == b:
+                print('B', end=' ')
+            elif conjunto == c:
+                print('C', end=' ')
+            elif conjunto == d:
+                print('D', end=' ')
+            elif conjunto == e:
+                print('E', end=' ')
+            elif conjunto == f:
+                print('F', end=' ')
+            else:
+                print('Error')
+    x += 1
+    
+    print('')
+
 acharx(issubset, a, issubset, b)
-acharx(isnotsubset, b, issubset, c)
-acharx(isnotsubset, a, isnotsubset, c)
-acharx(issubset, b, isnotsubset, c)
+acharx(isnotpropersubset, b, issubset, c)
+acharx(isnotpropersubset, a, isnotpropersubset, c)
+acharx(issubset, b, isnotpropersubset, c)
+acharxreverso(issubset, e, issubset, d)
